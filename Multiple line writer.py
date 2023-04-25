@@ -19,4 +19,9 @@ def write():
             Line = ("Enter a line:")
             print("")
 
+        #to write a new line on the file
+        my_life.write(Line + "\n")
+
+    
+
 
