@@ -1,4 +1,5 @@
 import random
+
 #define the function write
 def write():
 
@@ -13,10 +14,10 @@ def write():
         my_life.write(Line + "\n")
 
         #Ask the user if they want to enter another line
-        choices= input("Do you want to enter another line?(y/n):")
+        choices = input("Do you want to enter another line?(y/n):")
         
         #make a comment
-        if choices.lower() == "y":
+        if choices == "y":
             comments = ["You're doing great", "Great Job!", "That last line was beautiful", "A poet in the making "]
             print(random.choice(comments))
             
@@ -25,15 +26,19 @@ def write():
             
         
         #Do a while loop to ask the user repeatedly
-        while choices.lower == "y":
-            Line = ("Enter a line:")
+        while choices == "y":
             print("")
-
+            Line = input("Enter a line:")
+            
             #to write a new line on the file
             my_life.write(Line + "\n")
 
             #ask again the user if they want to continue
             choices = input("Do you want to enter another line?(y/n):")
+
+            #comments
+            comments = ["You're doing great", "Great Job!", "That last line was beautiful", "A poet in the making "]
+            print(random.choice(comments))
     
     #close the file
     my_life.close()
