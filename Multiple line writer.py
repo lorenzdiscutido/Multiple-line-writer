@@ -5,7 +5,7 @@ def write():
     with open("mylife.txt", "w") as my_life:
 
         #put a variable to where the user will input their lines
-        Line = ("Enter line:")
+        Line = input("Enter line:")
         print("")
 
         #to write a new line on the file
@@ -21,7 +21,11 @@ def write():
 
         #to write a new line on the file
         my_life.write(Line + "\n")
-
     
+    #close the file
+    my_life.close()
+
+#call the function
+write()
 
 
