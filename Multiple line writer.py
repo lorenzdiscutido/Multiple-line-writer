@@ -12,5 +12,11 @@ def write():
         my_life.write(Line + "\n")
 
         #Ask the user if they want to enter another line
-        choices = input("Do you want to enter another line?:")
+        choices = input("Do you want to enter another line?(y/n):")
+        
+        #Do a while loop to ask the user repeatedly
+        while choices == "y":
+            Line = ("Enter a line:")
+            print("")
+
 
