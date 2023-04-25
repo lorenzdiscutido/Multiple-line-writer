@@ -13,6 +13,7 @@ def write():
 
         #Ask the user if they want to enter another line
         choices = input("Do you want to enter another line?(y/n):")
+            
         
         #Do a while loop to ask the user repeatedly
         while choices == "y":
